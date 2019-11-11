@@ -11,6 +11,7 @@ If the username for your Git remote has a "@", remember to replace it with "%40"
 
 - `remoteUrl`: remote push URL
 - `skipHooks`: set to true to push with --no-verify (default: false)
+- `forcePush`: set to true to push with -f, **if you know what you are doing** (default: false)
 
 ## Usage
 

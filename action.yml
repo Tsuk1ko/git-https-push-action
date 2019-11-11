@@ -11,10 +11,14 @@ inputs:
   skipHooks:
     description: 'Skip git hooks with --no-verify'
     default: false
+  forcePush:
+    description: 'Force push with -f'
+    default: false
 runs:
   using: 'docker'
   image: 'Dockerfile'
   env:
     SKIP_HOOKS: ${{ inputs.skipHooks }}
+    FORCE_PUSH: ${{ inputs.forcePush }}
   args:
     - ${{ inputs.remoteUrl }}
