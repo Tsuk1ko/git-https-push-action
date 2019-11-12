@@ -34,7 +34,7 @@ jobs:
       - uses: actions/checkout@v1
         with:
           ref: master # you can use this to get a non-detached head but it's not strictly required
-      - uses: ilkka/git-https-push-action@master
+      - uses: Tsuk1ko/git-https-push-action@master
         name: Deploy
         with:
           remoteUrl: ${{ secrets.PUSH_REMOTE }}
